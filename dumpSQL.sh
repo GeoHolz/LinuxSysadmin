@@ -9,7 +9,7 @@ DATE=`date +%d_%m_%y`
 # Exclure des bases
 EXCLUSIONS='(information_schema|performance_schema)'
 # Répertoire de stockage des sauvegardes
-DATADIR="/root/NAS/_BackupMariaDB"
+DATADIR="/rsome/where/"
 
 # On place dans un tableau le nom de toutes les bases de données du serveur
 databases="$(mysql -u $USER -p$PASS -Bse 'show databases' | grep -v -E $EXCLUSIONS)"
