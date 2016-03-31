@@ -1,5 +1,4 @@
 #!/bin/bash
-
 ## Paramètres
 USER='user'
 PASS='password'
@@ -19,11 +18,9 @@ databases="$(mysql -u $USER -p$PASS -Bse 'show databases' | grep -v -E $EXCLUSIO
 for SQL in $databases
 
 do
-
-    echo $SQL
+    #echo $SQL
     mysqldump -u $USER -p$PASS --quick --add-locks --lock-tables --extended-insert $SQL --skip-lock-tables | gzip > ${DATADIR}/$SQL"_"$DATE.sql.gz
-
 done
 
-echo "Suppression des vieux backup : "
+#echo "Suppression des vieux backup : "
 find ${DATADIR} -name "*.gz" -mtime +${RETENTION} -print -exec rm {} \;
