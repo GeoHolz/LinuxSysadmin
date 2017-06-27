@@ -1,6 +1,6 @@
 #!/bin/bash
-# Mon script de post installation serveur Debian 8 aka Jessie
-#
+# Mon script de post installation serveur Debian 
+# Compatible Debian 8 JEssie / Debian 9 Stretch
 # Geoholz - 01/2016
 # GPL
 #
