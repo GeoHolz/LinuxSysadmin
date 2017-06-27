@@ -1,6 +1,7 @@
-# debian8-postinstall.sh
+# debian-postinstall.sh
 
-Script a utiliser apres une installation de Debian 8 aka Jessie.
+Script a utiliser apres une installation de Debian.
+Compatible Debian 8 Jessie et Debian 9 Stretch.
 
 Le script installe le shell Zsh, l'editeur de texte Vim et les configure grace au site http://formation-debian.via.ecp.fr/
 
