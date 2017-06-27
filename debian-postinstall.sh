@@ -4,9 +4,9 @@
 # Geoholz - 01/2016
 # GPL
 #
-# Syntaxe: # su - -c "./jessiepostinstall.sh"
-# Syntaxe: or # sudo ./jessiepostinstall.sh
-VERSION="0.1"
+# Syntaxe: # su - -c "./debian-postinstall.sh"
+# Syntaxe: or # sudo ./debian-postinstall.sh
+VERSION="0.2"
 
 #=============================================================================
 # Liste des applications ànstaller: A adapter a vos besoins
@@ -15,7 +15,7 @@ LISTE="fail2ban vim zsh curl"
 
 # Test que le script est lance en root
 if [ $EUID -ne 0 ]; then
-  echo -e "\nLe script doit êe lancén root: # sudo $0" 1>&2
+  echo -e "\nLe script doit être lancé avec l'utilisateur root: # sudo $0" 1>&2
   exit 1
 fi
 
