@@ -1,12 +1,12 @@
 #!/bin/bash
 # Mon script de post installation serveur Debian 
 # Compatible Debian 8 JEssie / Debian 9 Stretch
-# Geoholz - 01/2016
+# Geoholz - 03/2018
 # GPL
 #
 # Syntaxe: # su - -c "./debian-postinstall.sh"
 # Syntaxe: or # sudo ./debian-postinstall.sh
-VERSION="0.2"
+VERSION="0.3"
 
 #=============================================================================
 # Liste des applications ànstaller: A adapter a vos besoins
