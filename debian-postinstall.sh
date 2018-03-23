@@ -10,7 +10,7 @@ VERSION="0.3"
 
 #=============================================================================
 # Liste des applications ànstaller: A adapter a vos besoins
-LISTE="fail2ban vim zsh curl cheat"
+LISTE="fail2ban vim zsh curl"
 #=============================================================================
 
 # Test que le script est lance en root
