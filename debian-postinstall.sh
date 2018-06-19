@@ -1,6 +1,6 @@
 #!/bin/bash
 # Mon script de post installation serveur Debian 
-# Compatible Debian 8 JEssie / Debian 9 Stretch
+# Compatible Debian 8 Jessie / Debian 9 Stretch
 # Geoholz - 03/2018
 # GPL
 #
@@ -66,6 +66,5 @@ sed -i 's/destemail = root@localhost/destemail = '$MAIL'/g' /etc/fail2ban/jail.c
 
 
 
-echo -e "\n### Configuration finit. Il faut vous dénnecter/rconnecter pour que les modifications prennents effets"
-echo "### Lors de la premié connexion, il est prérable de choisir l'option 2 pour ZSH."
+echo -e "\n### Configuration finit. Les changements seront visibles à la prochaine connexion ( choix N°2 )"
 # Fin du script
